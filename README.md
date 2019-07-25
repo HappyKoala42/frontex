@@ -1,2 +1,2 @@
 # frontex
-A website for a fictional startup
+A website for a fictional startup specializing in space exploration.
