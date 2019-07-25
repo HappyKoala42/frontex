@@ -4,13 +4,13 @@ const navSlide = () => {
   const navlinksli = document.querySelectorAll(".nav-links li");
   const nav = document.querySelector("nav");
 
-  burger.addEventListener("click", function() {
+  burger.addEventListener("click", function () {
     navlinks.classList.toggle("nav-active");
   });
 };
 
 const scrollToggle = () => {
-  window.addEventListener("scroll", function(e) {
+  window.addEventListener("scroll", function (e) {
     const nav = document.querySelector("nav");
     if (document.documentElement.scrollTop >= 120) {
       nav.classList.add("nav-colored");
@@ -28,3 +28,9 @@ function checkHeight() {
 
 navSlide();
 scrollToggle();
+
+
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles', 'public/scripts/particles.json', function () {
+  console.log('callback - particles.js config loaded');
+});
