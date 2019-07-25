@@ -279,11 +279,20 @@ nav a {
     font-size: 30px;
     font-weight: 500;
     margin: 0 12%;
-    margin-bottom: 40px;
 }
 
-.mission-video {}
+#mission-video {
+    /* margin-bottom: 12em; */
+    transform: scale(.9);
+    margin: 5% 0;
+}
 
+.vjs-default-skin.vjs-paused .vjs-big-play-button {
+    /* display: none; */
+    position: absolute;
+    top: 47%;
+    left: 47%;
+}
 
 
 /* Button */
