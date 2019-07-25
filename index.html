@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Frontex</title>
     <link rel="stylesheet" href="public/stylesheets/style.css">
+    <link href="https://vjs.zencdn.net/7.6.0/video-js.css" rel="stylesheet">
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 </head>
 
 <body>
@@ -32,57 +35,89 @@
         </div>
     </nav>
 
-    <section>
-        <div class="hero">
-            <div class="hero-img">
-                <div class="hero-content">
-                    <h1>FRONTEX</h1>
-                    <h4>ascend outside the frontier.</h4>
-                    <button>Learn More</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="about">
-            <div class="about-img">
-                <div class="about-content">
-                    <h1>About Frontex</h1>
-                    <div class="about-wrapper">
-                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam porro nulla, praesentium,
-                            quasi
-                            cumque consectetur facilis alias dolores at nisi beatae fugiat reiciendis sit dolore
-                            voluptas
-                            perferendis mollitia, eligendi harum! Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit.
-                            Molestias, totam? Distinctio ab praesentium ad, exercitationem hic consequuntur? Nesciunt
-                            ratione, suscipit minus quia mollitia voluptatum fuga quas velit. Sint, at fuga. Lorem ipsum
-                            dolor sit amet, consectetur adipisicing elit. Laudantium unde totam libero nobis ut impedit,
-                            tempore quam, tenetur labore, quo facilis quia soluta illo veniam assumenda commodi debitis
-                            ipsam ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam porro nulla,
-                            praesentium, quasi <br>
-                            cumque consectetur facilis alias dolores at nisi beatae fugiat reiciendis sit dolore
-                            voluptas
-                            perferendis mollitia, eligendi harum! Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit.
-                            Molestias, totam? Distinctio ab praesentium ad, exercitationem hic consequuntur? Nesciunt
-                            ratione, suscipit minus quia mollitia voluptatum fuga quas velit. Sint, at fuga. Lorem ipsum
-                            dolor sit amet, consectetur adipisicing elit. Laudantium unde totam libero nobis ut impedit,
-                            tempore quam, tenetur labore, quo facilis quia soluta illo veniam assumenda commodi debitis
-                            ipsam ea?</h4>
-                        <img src="public/img/ship.png" alt="">
+    <main>
+        <section>
+            <div class="hero">
+                <div class="hero-img">
+                    <div class="hero-content">
+                        <h1>FRONTEX</h1>
+                        <h4>ascend outside the frontier.</h4>
                         <button>Learn More</button>
                     </div>
-
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section>
+            <div class="about">
+                <div class="about-img">
+                    <div class="about-content">
+                        <h1>About Frontex</h1>
+                        <div class="about-wrapper">
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam porro nulla, praesentium,
+                                quasi
+                                cumque consectetur facilis alias dolores at nisi beatae fugiat reiciendis sit dolore
+                                voluptas
+                                perferendis mollitia, eligendi harum! Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit.
+                                Molestias, totam? Distinctio ab praesentium ad, exercitationem hic consequuntur?
+                                Nesciunt
+                                ratione, suscipit minus quia mollitia voluptatum fuga quas velit. Sint, at fuga. Lorem
+                                ipsum
+                                dolor sit amet, consectetur adipisicing elit. Laudantium unde totam libero nobis ut
+                                impedit,
+                                tempore quam, tenetur labore, quo facilis quia soluta illo veniam assumenda commodi
+                                debitis
+                                ipsam ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam porro nulla,
+                                praesentium, quasi <br>
+                                cumque consectetur facilis alias dolores at nisi beatae fugiat reiciendis sit dolore
+                                voluptas
+                                perferendis mollitia, eligendi harum! Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit.
+                                Molestias, totam? Distinctio ab praesentium ad, exercitationem hic consequuntur?
+                                Nesciunt
+                                ratione, suscipit minus quia mollitia voluptatum fuga quas velit. Sint, at fuga. Lorem
+                                ipsum
+                                dolor sit amet, consectetur adipisicing elit. Laudantium unde totam libero nobis ut
+                                impedit,
+                                tempore quam, tenetur labore, quo facilis quia soluta illo veniam assumenda commodi
+                                debitis
+                                ipsam ea?</h4>
+                            <img src="public/img/ship.png" alt="">
+                            <!-- <button>Learn More</button> -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="mission">
+                <div class="mission-img">
+                    <div class="mission-content">
+                        <h1>Our Mission</h1>
+                        <h4>Our mission is to take space exploration to a whole new level by breaking the frontier of
+                            rules that limits us from truly seeing what our galaxy has to offer. You won't find a
+                            package as affordable as this! We want you to experience something you'd never thought would
+                            be possible, until now.</h4>
+                        <video id="mission-video" class="video-js vjs-default-skin" width="640px" height="267px"
+                            controls preload="none" poster='public/img/thumbnail.png'
+                            data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>
+                            <source src="public/vid/spacex-falconx.mp4" type='video/mp4' />
+                        </video>
+                        <!-- <button>Learn More</button> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
 
 
     <script src="https://kit.fontawesome.com/3453b874c7.js"></script>
     <script src="public/scripts/app.js"></script>
+    <script src='https://vjs.zencdn.net/7.6.0/video.js'></script>
 </body>
 
 </html>
