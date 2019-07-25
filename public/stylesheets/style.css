@@ -5,33 +5,66 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Darker Grotesque', sans-serif;
+    scroll-behavior: smooth;
 }
 
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    /* border-radius: 10px; */
+    background-color: rgb(43, 43, 43);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
+body {
+    background-color: black;
+}
 
 /* NAVBAR */
 nav {
     display: flex;
     justify-content: space-around;
     align-content: center;
-    background-color: rgba(0, 0, 0, 0);
+    /* background-color: transparent */
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
 }
 
+.nav-colored {
+    background-color: black;
+    transition: all 1s;
+}
+
+.nav-transparent {
+    background-color: transparent;
+    transition: all 1s;
+}
+
 nav a {
     color: white;
     text-decoration: none;
+    transition: color .3s;
 }
 
 .nav-logo {
     display: flex;
-    padding: 20px;
+    /* padding: 20px; */
     justify-self: flex-start;
     align-self: center;
-    font-size: 28px;
     font-weight: 100;
+    font-size: 35px;
 }
 
 .nav-links {
@@ -41,19 +74,33 @@ nav a {
 
 .nav-links>li {
     list-style: none;
-    padding: 20px;
+    padding: 20px 0px;
+    transform: translateY(5%);
+    transition: transform .2s ease-out;
+}
+
+.nav-links>li:hover {
+    transform: translateY(0%);
+}
+
+.nav-links a {
     font-size: 20px;
+    padding: 20px;
+}
+
+.nav-links a:hover {
+    color: rgb(255, 15, 67);
 }
 
 /* COVER */
 .hero-img {
-    background-color: red;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), black), url(https://images.unsplash.com/photo-1504333638930-c8787321eee0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
+    background-color: black;
+    background-image: linear-gradient(to bottom, rgba(1, 0, 36, 0.432), black), url(https://images.unsplash.com/photo-1504333638930-c8787321eee0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
     background-size: cover;
     background-position: fixed;
     background-repeat: no-repeat;
     position: relative;
-    height: 100vh;
+    height: 150vh;
     padding: 50px;
 }
 
@@ -83,10 +130,22 @@ button {
     border-style: none;
     padding: 8px 30px;
     border-radius: 4px;
-    background-color: blue;
+    background-color: rgb(230, 15, 27);
     color: white;
+    transition: background-color .3s ease-out;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: rgb(255, 25, 50);
+}
+
+button:active {
+    background-color: rgb(190, 5, 37);
 }
 
 button:focus {
-    outline-color: red;
+    outline: none;
 }
