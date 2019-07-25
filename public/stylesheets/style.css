@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    background-color: black;
+    font-family: sans-serif;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-logo {
+    display: flex;
+    padding: 20px;
+    justify-self: flex-start;
+    align-self: center;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-links>li {
+    list-style: none;
+    padding: 20px;
+}
