@@ -413,6 +413,7 @@ video:focus {
 .customer-box img {
   border-radius: 50%;
   width: 80px;
+  box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.2);
 }
 
 .customer-box h6 {
@@ -549,6 +550,140 @@ video:focus {
   font-size: 20px;
 }
 
+/* Conract */
+.contact-img {
+  background-color: black;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), black),
+    url(https://images.unsplash.com/photo-1454789548928-9efd52dc4031?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  /* opacity: 0; */
+}
+
+.contact-content {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  margin-top: 10em;
+}
+
+.contact-content h1 {
+  display: block;
+  font-size: 70px;
+  font-weight: 200;
+}
+
+.contact-content h4 {
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  margin: 0 12% 2% 12%;
+}
+
+form {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+form button {
+  margin: 20px auto;
+}
+
+form label {
+  display: flex;
+  margin-left: 18px;
+  justify-content: flex-start;
+  color: white;
+}
+
+input[type="text"] {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  margin-top: 4px;
+  padding: 8px;
+  width: 350px;
+  border-style: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #111;
+}
+
+input[type="text"]:focus {
+  outline-color: red;
+}
+
+input[type="email"]:focus {
+  outline-color: red;
+}
+
+textarea:focus {
+  outline-color: red;
+}
+
+input[type="email"] {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  margin-top: 4px;
+  padding: 8px;
+  width: 350px;
+  border-style: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #111;
+}
+
+textarea {
+  display: block;
+  margin: 0 auto;
+  padding: 8px;
+  height: 120px;
+  width: 350px;
+  border-style: none;
+  color: white;
+  background-color: #111;
+  border-radius: 5px;
+  resize: none;
+}
+
+@media screen and (max-width: 514px) {
+  form {
+    width: 300px;
+  }
+  input[type="email"] {
+    width: 255px;
+  }
+
+  input[type="text"] {
+    width: 255px;
+  }
+  textarea {
+    width: 255px;
+  }
+  form label {
+    margin-left: 12px;
+  }
+}
+
+footer {
+  background: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}
+
 /* MEDIA QUERY */
 
 @media screen and (max-width: 1225px) {
@@ -580,6 +715,10 @@ video:focus {
   .customer-wrapper {
     flex-direction: column;
     align-items: center;
+  }
+
+  .pricing-img {
+    height: 240vh;
   }
 
   .pricing-wrapper {
@@ -645,6 +784,10 @@ video:focus {
 
   .testimony-img {
     height: 180vh;
+  }
+
+  .pricing-img {
+    height: 250vh;
   }
 }
 
