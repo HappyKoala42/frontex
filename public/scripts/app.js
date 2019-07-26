@@ -27,6 +27,7 @@ const scrollToggle = () => {
     const mission = document.querySelector(".mission-img");
     const testimony = document.querySelector(".testimony-img");
     const pricing = document.querySelector(".pricing-img");
+    const contact = document.querySelector(".contact-img");
 
     // Navbar
     if (document.documentElement.scrollTop >= 120) {
@@ -53,6 +54,11 @@ const scrollToggle = () => {
       pricing.classList.add("fadeinAnim");
     }
 
+    // Fade contact section
+    if (document.documentElement.scrollTop >= 3797) {
+      contact.classList.add("fadeinAnim");
+    }
+
   });
 };
 
@@ -64,7 +70,7 @@ function checkHeight() {
 
 navSlide();
 scrollToggle();
-checkHeight();
+// checkHeight();
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 particlesJS.load('particles', 'public/scripts/particles.json', function () {
